@@ -27,7 +27,11 @@ sudo systemctl start spice-vdagentd
 ```
 sudo systemctl enable spice-vdagentd
 ```
-## GPU Performance
+## Auto resize screen resolution
+Note: may need spice-vdagent, gnome to work
+
+View -> Scale display -> Always, Auto resize VM with window
+## GPU Passthrough
 ### Video
 Model: Virtio
 
