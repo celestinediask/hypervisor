@@ -18,6 +18,8 @@ sudo usermod -aG libvirt $(whoami)
 ```
 ## Enable send file and copy paste feature
 ### Arch
+> [!NOTE]
+> Following should be performed on guest OS.
 ```
 sudo pacman -S spice-vdagent
 ```
@@ -45,6 +47,7 @@ Listen Type: None
 OpenGL: enable
 
 ## Use without root privilage (not secure)
-Warning! normal user can acces vm
+> [!WARNING]
+> Normal user can acces vm.
 
 QEMU requires root privilege by default due to connection QEMU/KVM storage pool is in root. Add QEMU/KVM user session and delete the default connection. Now images are created in home directory instead of root.
