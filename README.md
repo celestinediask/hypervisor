@@ -1,34 +1,3 @@
-# virt-manager
-## Installation
-### Arch
-```
-sudo pacman -S virt-manager qemu libvirt dnsmasq
-```
-```
-sudo systemctl enable libvirtd.service
-```
-```
-sudo systemctl start libvirtd.service
-```
-```
-sudo virsh net-start default
-```
-```
-sudo usermod -aG libvirt $(whoami)
-```
-## Enable send file and copy paste feature
-### Arch
-> [!NOTE]
-> Following should be performed on guest OS.
-```
-sudo pacman -S spice-vdagent
-```
-```
-sudo systemctl start spice-vdagentd
-```
-```
-sudo systemctl enable spice-vdagentd
-```
 ## Auto resize screen resolution
 Note: may need spice-vdagent, gnome to work
 
